@@ -1,0 +1,8 @@
+---
+- name: gather somne facts
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: print IP Address
+      debug:
+        msg: "IPv4 address: {{ ansible_default_ipv4.address }}"
