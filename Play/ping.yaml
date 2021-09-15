@@ -1,0 +1,7 @@
+---
+- name: Quick connection test
+  hosts: all
+  gather_facts: true
+  tasks:
+    - ping:
+        crash: data
