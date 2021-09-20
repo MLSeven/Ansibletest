@@ -1,6 +1,6 @@
 ---
 - name: Quick connection test
   hosts: all
-  gather_facts: false
+  gather_facts: true
   tasks:
     - ping:
