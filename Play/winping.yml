@@ -1,0 +1,5 @@
+---
+- name: Quick connection test
+  hosts: all
+  tasks:
+    - win_ping:
