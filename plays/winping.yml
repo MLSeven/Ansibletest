@@ -3,3 +3,4 @@
   hosts: all
   tasks:
     - win_ping:
+    - debug: var=group_names
