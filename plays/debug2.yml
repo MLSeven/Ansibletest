@@ -1,7 +1,12 @@
 ---
 - name: "Ansible | List all known variables and facts"
-  hosts: all
   tasks:
-    - name: "debug"
+    - name: "debug groups"
       debug:
-        var: hostvars[inventory_hostname]
+        var: groups
+    - name: "debug group names"
+      debug:
+        var: group_names
+    - name: "Inventory Hosts"
+      debug:
+        var: ansible_play_hosts
