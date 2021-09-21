@@ -3,7 +3,4 @@
   hosts: all
   tasks:
     - win_ping:
-   
-- name: "Debug all vars" 
-  debug:  
-    var: hostvars[inventory_hostname]
+
