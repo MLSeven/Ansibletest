@@ -2,5 +2,6 @@
 - name: "Ansible | List all known variables and facts"
   hosts: all
   tasks:
-    - name: "Debug"
-    - debug: var=hostvars[inventory_hostname]
+    - name: "debug"
+      debug:
+        var: hostvars[inventory_hostname]
