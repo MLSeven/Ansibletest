@@ -1,5 +1,6 @@
 ---
 - name: "Ansible | List all known variables and facts"
+  hosts: all
   tasks:
     - name: "debug groups"
       debug:
