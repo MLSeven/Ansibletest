@@ -1,9 +1,9 @@
 ---
-- name: Quick connection test
+- name: "Quick connection test"
   hosts: all
   tasks:
     - win_ping:
    
-- name "Debug all vars" 
+- name: "Debug all vars" 
   debug:  
     var=hostvars[inventory_hostname]
