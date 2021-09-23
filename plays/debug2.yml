@@ -11,3 +11,6 @@
     - name: "Inventory Hosts"
       debug:
         var: ansible_play_hosts
+    - name: "Included Group Files"
+      debug:
+        var: mygroupname
