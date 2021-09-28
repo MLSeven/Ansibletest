@@ -14,3 +14,12 @@
     - name: "Included Group Files"
       debug:
         var: mygroupname
+    - name: "Ansible_fqdn"
+      debug:
+        var: ansible_fqdn
+    - name: "Morpheus? fqdn"
+      debug:
+        var: fqdn
+    - name: "Morpheus Hostname"
+      debug:
+        var: hostname
