@@ -1,4 +1,4 @@
 ---
-- name Test Galaxy Role
-  src https://github.com/SmartOpsAcademy/ansible-basics
+- name Test Galaxy Role from Github
+  src https://github.com/geerlingguy/ansible-role-docker
 
