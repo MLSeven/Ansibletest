@@ -1,0 +1,4 @@
+---
+- name Test Galaxy Role
+  src https://gitbub.com/SmartOpsAcademy/ansible-basics
+
