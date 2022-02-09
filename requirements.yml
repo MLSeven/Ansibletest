@@ -1,2 +1,3 @@
+# Galaxy Role
 ---
-- name https://github.com/geerlingguy/ansible-role-docker.git
+- src: community.general
