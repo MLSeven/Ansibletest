@@ -1,3 +1,4 @@
 # Galaxy Role
 ---
-- src: community.general
+collections:
+- community.general
