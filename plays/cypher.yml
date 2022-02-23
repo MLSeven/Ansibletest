@@ -1,0 +1,15 @@
+---
+- name: Cypher Test
+  hosts: all
+ 
+  tasks:
+    - name: Print out a Cypher secret 
+      vars: 
+        msg: |
+          Morpheus Secret Test :
+          --------------------------------
+          {{ lookup('cypher','secret=secret/squirrel')}} 
+          
+      debug: 
+        msg: "{{ msg.split('\n') }}"       
+      tags: cypher_info
