@@ -1,0 +1,14 @@
+---
+- name: Morpheus Vars
+  hosts: all
+ 
+  tasks:
+    - name: Print some debug information 
+      vars: 
+        msg: |
+          Module Variables : ("morpheus")
+          --------------------------------
+          {{ morpheus['instance']['instanceVersion'] }} 
+      debug: 
+        msg: "{{ msg.split('\n') }}"       
+      tags: debug_info
