@@ -1,0 +1,6 @@
+---
+- name: Sleep for 180 seconds and continue with play
+  hosts: all
+  wait_for:
+    timeout: 180
+  delegate_to: localhost
