@@ -9,3 +9,8 @@
     become: yes
     become_user: administrator
     win_shell: whoami
+    
+  - name: as Ad account
+    become: yes
+    become_user: spotts@test.morpheusdata.com
+    win_shell: whoami
