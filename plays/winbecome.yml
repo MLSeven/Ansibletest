@@ -17,4 +17,5 @@
     
   - name: details
     ansible.windows.win_whoami:
+    become_user: spotts@test.morpheusdata.com
     become: yes
