@@ -1,4 +1,11 @@
+- hosts: all
+  gather_facts: no
+  become_method: runas
+  tasks:
+  - name: as default user
+    win_shell: whoami    
 
-- name: Windoows Become
-  ansible.windows.win_whoami:
-  become: yes
+  - name: as administrator
+    become: yes
+    become_user: administrator
+    win_shell: whoami
