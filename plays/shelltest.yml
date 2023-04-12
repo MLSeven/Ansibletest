@@ -1,0 +1,12 @@
+---
+  - name: Shell Test Example
+    hosts: all
+    tasks:
+    
+    - name: Print Working Directory
+      shell:
+        "echo $PWD"
+      register: pwdcmd
+      tags: pwdcmd
+      
+    - debug: msg="{{pwdcmd.stdout}}"
