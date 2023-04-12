@@ -4,9 +4,11 @@
     tasks:
     
     - name: List Ansible Working folder
-      shell:
-        ls -laR ~/.ansible
-      register: pwdcmd
-      tags: pwdcmd
+      shell: |
+        echo "Current user is $USER"
+        pwd
+        
+      register: fileout
+      tags: fileout
       
-    - debug: msg="{{pwdcmd.stdout}}"
+    - debug: msg="{{ fileout.stdout }}"
