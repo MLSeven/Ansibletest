@@ -5,7 +5,7 @@
     
     - name: List Ansible Working folder
       become: yes
-      become_user: {{ ansible-user }}
+      become_user: {{ ansible_user }}
       ansible.builtin.command: "echo $HOME"
       args:
         chdir: ~
