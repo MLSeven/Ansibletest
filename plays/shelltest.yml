@@ -5,7 +5,8 @@
     
     - name: List Ansible Working folder
       shell: |
-        echo "Current user is $USER"
+        echo "~{{ ansible_user }}"
+        cd "~{{ ansible_user }}"
         pwd
         
       register: fileout
