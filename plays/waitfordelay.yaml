@@ -1,8 +1,9 @@
 ---
 - name: Just cause a delay
   hosts: all
+  gather_facts: true
   tasks:
   - name: Sleep
     wait_for:
-      timeout: 10
+      timeout: 60
     delegate_to: localhost
