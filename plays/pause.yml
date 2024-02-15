@@ -1,3 +1,4 @@
 - name: Pause for 5 mins
+  hosts: all
   ansible.builtin.pause:
     minutes: 5
