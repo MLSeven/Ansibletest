@@ -1,0 +1,3 @@
+- name: Pause for 5 mins
+  ansible.builtin.pause:
+    minutes: 5
