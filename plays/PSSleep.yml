@@ -3,6 +3,6 @@
     hosts: all
     tasks:
       - name: Powershell sleep
-      win_powershell:
-        script: |
-          Start-Sleep -Seconds 200
+        win_powershell:
+          script: |
+            Start-Sleep -Seconds 200
