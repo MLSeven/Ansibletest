@@ -1,0 +1,6 @@
+---
+  - name: Run Powershell sleep
+    hosts: all
+    win_powershell:
+      script: |
+        Start-Sleep -Seconds 200
