@@ -1,4 +1,4 @@
 - name: Pause for 5 mins
   hosts: all
-  ansible.builtin.wait_for:
+  wait_for:
     timeout: 300
