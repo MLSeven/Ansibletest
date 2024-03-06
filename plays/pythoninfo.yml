@@ -1,0 +1,6 @@
+---
+- name: Ansible Python Info
+  hosts: localhost
+  tasks:
+  - name: Vault Test
+    python_requirements_info:
