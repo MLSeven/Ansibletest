@@ -1,0 +1,7 @@
+---
+- name: HVAC test
+  hosts: localhost
+  tasks:
+  - name: Vault Test
+    ansible.builtin.set_fact:
+      msg: "{{ lookup('community.hashi_vault.hashi_vault', 'secret=secret/data/morpheus-credentials/sptest token=gKX6nP6bjhjRwC url=http://10.32.21.244:8200')}}"
