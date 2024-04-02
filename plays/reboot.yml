@@ -3,7 +3,7 @@
   hosts: all
   tasks:
   - name: Reboot test
-    ansible.builtin.command: "sleep 30 && reboot"
+    ansible.builtin.shell: sleep 30s && reboot
     async: 20
     poll: 0
       
