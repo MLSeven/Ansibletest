@@ -4,6 +4,4 @@
   tasks:
   - name: Reboot test
     ansible.builtin.raw: sleep 30s && reboot
-    async: 20
-    poll: 0
-      
+    
