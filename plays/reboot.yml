@@ -5,5 +5,5 @@
   - name: Reboot test
     ansible.builtin.command: "sleep 30 && reboot'
     async: 20
-    poll : 0
+    poll: 0
       
