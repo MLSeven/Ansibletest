@@ -3,5 +3,5 @@
   hosts: all
   tasks:
   - name: Reboot test
-    ansible.builtin.raw: sleep 30s && reboot
+    ansible.builtin.raw: nohup sleep 30s && reboot &
     
